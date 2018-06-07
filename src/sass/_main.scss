@@ -1,0 +1,18 @@
+html {
+  cursor: url(../assets/img/cursor.png), pointer;
+  height: 100%;
+}
+
+body {
+  font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+  height: 100%;
+      background: url(../assets/img/banner-background.jpg) no-repeat top center;
+  height: 832px;
+  overflow: hidden;
+}
+#app {
+  height: 100%;
+}
+ul {
+  list-style: none;
+}

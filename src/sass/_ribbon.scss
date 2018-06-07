@@ -1,0 +1,38 @@
+$ribbon-bg: rgba(255, 255, 255, 0.3);
+  $ribbon-hl: rgba(255, 255, 255, 0.3);
+  $ribbon-w: 40px;
+  $ribbon-tail: 10px;
+
+  .ribbon {
+    padding:0 0 $ribbon-tail 0;
+    position: absolute;
+    // left:236px;
+    // top:48px;
+    margin: 6px 0 0 238px;
+    width:$ribbon-w;
+    height: 40px;
+    z-index: 10;
+    // border: 1px solid rgba(255, 255, 255, 0.5);
+
+    div {
+      background:$ribbon-bg;
+      background: linear-gradient($ribbon-hl 0%, $ribbon-bg 100%);
+      color:rgba(255, 255, 255, 0.9);
+      padding:0.2em 0;
+      font-weight: 800;
+      text-align:center;
+      text-shadow:0 0 3px rgba(51, 51, 51, 0.7);
+      font-size: 18px;
+    }
+
+    div:after {
+      border-left: $ribbon-w/2 solid $ribbon-bg;
+      border-right: $ribbon-w/2 solid $ribbon-bg;
+      border-bottom: $ribbon-tail solid transparent;
+      content:'';
+      height: 0;
+      width: 0;
+      margin-top: 3px;
+      float: left;
+    }
+  }
